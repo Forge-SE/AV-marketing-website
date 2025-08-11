@@ -101,7 +101,7 @@ Energy Consulting & Project Development
   <Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} />
 </div>
         </section>
-        <section className="flex flex-col md:flex-row  justify-center items-center bg-orange-200 h-auto p-5 md:p-10 ">
+        <section className="flex flex-col md:flex-row  justify-center items-start md:items-center bg-orange-200 h-auto p-5 md:p-10 ">
 <h2 className="text-4xl font-semibold clash text-orange-800">Ready to Power The Future</h2>
 <div className="flex flex-col justify-center items-start gap-4">
 <p className="text-base"> Work with Afrovivo International Ltd to access dependable energy solutions and unlock sustainable growth.</p>
