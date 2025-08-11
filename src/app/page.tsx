@@ -15,16 +15,16 @@ export default function Home() {
             zIndex: 0,
           }}
         />
-        <div className="relative z-10 w-full h-full flex flex-col items-start justify-end p-10 gap-3">
-        <h1 className="text-white clash text-6xl font-medium w-3/4 "> Powering Africa&apos;s future one innovation at a time
+        <div className="relative z-10 w-full h-full flex flex-col items-start justify-end p-5 md:p-10 gap-3">
+        <h1 className="text-white clash text-6xl font-medium md:w-3/4 "> Powering Africa&apos;s future one innovation at a time
 </h1>
-<p className="text-white w-1/2 clash ">Afrovivo Energy is an Africa-born, globally-minded energy company, driving progress through oil & gas innovation and renewable energy solutions.</p>
+<p className="text-white w-full  md:w-1/2 clash ">Afrovivo Energy is an Africa-born, globally-minded energy company, driving progress through oil & gas innovation and renewable energy solutions.</p>
 <button className="bg-orange-400 text-white py-2 px-4 rounded-full  leading-normal">Learn More</button>
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center w-full gap-10 p-10">
-        <div className="flex justify-center items-center">
-<div className="flex flex-col w-1/2 justify-center items-start gap-3">
+      <section className="flex flex-col justify-center items-center w-full gap-10 p-5 md:p-10">
+        <div className="flex flex-col  md:flex-row justify-center items-center gap-5">
+<div className="flex flex-col  w-full md:w-1/2 justify-center items-start gap-3">
 <h2 className="text-4xl font-semibold clash">Who We Are</h2>
 <p className="text-md text-">
    Afrovivo Energy is a future-focused energy company committed to powering Africa’s growth through sustainable, reliable, and innovative energy solutions. Founded with a vision to bridge Africa’s energy gap, we operate at the intersection of oil & gas efficiency and renewable energy transformation.
@@ -32,18 +32,18 @@ We believe Africa’s energy future must be clean, accessible, and inclusive. Th
 
 </p>
 </div>
-<div className="flex flex-col justify-center items-center w-1/2">
+<div className="flex flex-col justify-center items-center w-full  md:w-1/2">
   <Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} />
 </div>
         </div>
-<div className="flex justify-center items-center w-full gap-20">
+<div className="flex justify-center items-center w-full gap-10 md:gap-20">
 <AboutCard title="Our Mission" subtext=" To become Africa’s most trusted energy innovator—connecting communities, industries, and nations to a sustainable power future." Icon={<RocketLaunchIcon className="size-10 text-orange-900" />} />
 <AboutCard title="Our Vision" subtext=" Deliver dependable energy today, while building the clean systems that will define tomorrow"  Icon={<ForwardIcon className="size-10 text-orange-900" />} />
 </div>
  <div className='2-full flex flex-col justify-center items-start bg-orange-200 border border-orange-600 p-5 rounded-lg gap-5'>
       <SparklesIcon className="size-10 text-orange-900" />
       <h3 className='text-2xl text-orange-950 font-bold clash'>Our Values</h3>
-     <div className="flex justify-center items-center gap-10">
+     <div className="flex flex-col  md:flex-row justify-center items-start md:items-center gap-10">
 <Values title="Innovation" subtext="We welcome fresh ideas that redefine Africa’s energy landscape.
 "/>
 <Values title="Integrity" subtext="We earn trust through honesty, transparency, and ethical conduct."/>
@@ -90,18 +90,18 @@ Energy Consulting & Project Development
         </div>
       
       </section>
-       <section className="flex justify-center items-center p-10">
-<div className="flex flex-col w-1/2 justify-center items-start gap-3">
+       <section className="flex flex-col md:flex-row justify-center items-center p-5 md:p-10">
+<div className="flex flex-col w-full md:w-1/2 justify-center items-start gap-3">
 <h2 className="text-4xl font-semibold clash">Our Markets</h2>
 <p className="text-md text-">
   We&apos;re proudly headquartered in Ghana, with a growing footprint across West Africa. Through strong partnerships spanning Africa, Europe, Asia, and the Middle East, we bring the best global innovations home.
 </p>
 </div>
-<div className="flex flex-col justify-center items-center w-1/2">
+<div className="flex flex-col justify-center items-center w-full md:w-1/2">
   <Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} />
 </div>
         </section>
-        <section className="flex justify-center items-center bg-orange-200 h-auto p-10 ">
+        <section className="flex flex-col md:flex-row  justify-center items-start md:items-center bg-orange-200 h-auto p-5 md:p-10 ">
 <h2 className="text-4xl font-semibold clash text-orange-800">Ready to Power The Future</h2>
 <div className="flex flex-col justify-center items-start gap-4">
 <p className="text-base"> Work with Afrovivo International Ltd to access dependable energy solutions and unlock sustainable growth.</p>
