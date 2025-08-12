@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ForwardIcon, RocketLaunchIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import Values from "@/components/Values";
 import ServicesCard from "@/components/Services";
+import Blip from "@/components/Blip";
 export default function Home() {
   return (
     <main className="space-y-48">
@@ -101,16 +102,52 @@ Energy Consulting & Project Development
   <Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} />
 </div>
         </section>
-        <section className="flex flex-col md:flex-row  justify-center items-start md:items-center bg-orange-200 h-auto p-5 md:p-10 ">
-<h2 className="text-4xl font-semibold clash text-orange-800">Ready to Power The Future</h2>
-<div className="flex flex-col justify-center items-start gap-4">
-<p className="text-base"> Work with Afrovivo International Ltd to access dependable energy solutions and unlock sustainable growth.</p>
+        <section className="flex flex-col   justify-center items-center gap-10 bg-orange-500  w-3/4 mx-auto h-auto p-5 md:p-10 rounded-md">
+        <div className="flex flex-col justify-center items-center gap-3">
+<h2 className="text-4xl font-semibold clash text-white">Ready to Power The Future</h2>
+<div className="flex flex-col justify-center items-center gap-4">
+<p className="text-base text-white"> Work with Afrovivo International Ltd to access dependable energy solutions and unlock sustainable growth.</p>
 <div className="flex justify-center items-start gap-4">
 <button className="bg-orange-600 text-white px-4 py-2 rounded-full text-sm">Contact Us</button>
 <button className="bg-orange-600 text-white px-4 py-2 rounded-full text-sm">Request A Proposal</button>
+
 </div>
+</div>
+<div className="flex justify-center items-center">
+<Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} className="rounded-2xl" />
+<Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} className="rounded-2xl"/>
+</div>
+
 </div>
         </section>
+        <section className="flex flex-col justify-center items-center gap-10 p-10">
+          <div className="flex flex-col justify-center items-center gap-10">
+<div className="flex flex-col justify-center items-start gap-3 w-full">
+<h2 className="text-4xl font-semibold clash">Impact & Sustainability</h2>
+<p className=" text-gray-900">For us, energy is more than power—it’s the key to unlocking education, healthcare, jobs, and equality. That’s why our projects aim to:
+</p>
+<div className="flex justify-center items-start gap-5">
+  <Blip textSpan="Reduce carbon emissions" />
+  <Blip textSpan="Create jobs in local communities." />
+  <Blip textSpan="Expand energy access in areas that need it most." />
+  </div>
+</div>
+<div className="flex flex-col justify-center items-start gap-2 w-full">
+<h2 className="text-4xl font-semibold clash">Partnerships</h2>
+<p className="text-gray-900 text-sm">We team up with:</p>
+  <div className="flex justify-center items-start gap-5">
+  <Blip textSpan="Global companies entering African energy markets." />
+  <Blip textSpan="Global companies entering African energy markets." />
+  <Blip textSpan="Global companies entering African energy markets." />
+  </div>
+
+
+</div>
+          </div>
+              <hr className="h-0.25 w-full bg-gray-200 border-none"/>
+          </section>
+      
+         
     </main>
   );
 }
