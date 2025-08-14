@@ -134,7 +134,7 @@ image="img-7.jpg"
 <h2 className="text-4xl font-semibold clash">Impact & Sustainability</h2>
 <p className=" text-gray-900">For us, energy is more than power—it’s the key to unlocking education, healthcare, jobs, and equality. That’s why our projects aim to:
 </p>
-<div className="flex justify-center items-start gap-5">
+<div className="flex flex-col md:flex-row justify-center items-start gap-5">
   <Blip textSpan="Reduce carbon emissions" />
   <Blip textSpan="Create jobs in local communities." />
   <Blip textSpan="Expand energy access in areas that need it most." />
@@ -143,7 +143,7 @@ image="img-7.jpg"
 <div className="flex flex-col justify-center items-start gap-2 w-full">
 <h2 className="text-4xl font-semibold clash">Partnerships</h2>
 <p className="text-gray-900 text-sm">We team up with:</p>
-  <div className="flex justify-center items-start gap-5">
+  <div className="flex md:flex-row flex-col justify-center items-start gap-5">
   <Blip textSpan="Global companies entering African energy markets." />
   <Blip textSpan="Global companies entering African energy markets." />
   <Blip textSpan="Global companies entering African energy markets." />
