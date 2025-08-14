@@ -37,7 +37,7 @@ We believe Africa’s energy future must be clean, accessible, and inclusive. Th
   <Image src="/img2.jpg" alt="Afrovivo Logo" width={400} height={100}  className="rounded-lg"/>
 </div>
         </div>
-<div className="flex justify-center items-center w-full gap-10 md:gap-20">
+<div className="flex md:flex-row flex-col justify-center items-center w-full gap-10 md:gap-20">
 <AboutCard title="Our Mission" subtext=" To become Africa’s most trusted energy innovator—connecting communities, industries, and nations to a sustainable power future." Icon={<RocketLaunchIcon className="size-10 text-orange-900" />} />
 <AboutCard title="Our Vision" subtext=" Deliver dependable energy today, while building the clean systems that will define tomorrow"  Icon={<ForwardIcon className="size-10 text-orange-900" />} />
 </div>
@@ -110,7 +110,7 @@ image="img-7.jpg"
   <Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} />
 </div>
         </section>
-        <section className="flex flex-col   justify-center items-center gap-10 bg-orange-500  w-3/4 mx-auto h-auto p-5 md:p-10 rounded-md">
+        <section className="flex flex-col   justify-center items-center gap-10 bg-orange-500 w-4/5  md:w-3/4 mx-auto h-auto p-5 md:p-10 rounded-md">
         <div className="flex flex-col justify-center items-center gap-3">
 <h2 className="text-4xl font-semibold clash text-white">Ready to Power The Future</h2>
 <div className="flex flex-col justify-center items-center gap-4">
@@ -121,7 +121,7 @@ image="img-7.jpg"
 
 </div>
 </div>
-<div className="flex justify-center items-center">
+<div className="flex md:flex-row flex-col justify-center items-center">
 <Image src="/img-1.jpg" alt="Afrovivo Logo" width={400} height={100} className="rounded-2xl" />
 <Image src="/img-3.jpg" alt="Afrovivo Logo" width={400} height={100} className="rounded-2xl"/>
 </div>
