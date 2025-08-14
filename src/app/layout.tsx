@@ -33,7 +33,7 @@ export default function RootLayout({
       >
         {children}
          <section className="grid grid-cols-1 md:grid-cols-3 w-full place-items-center p-10">
-  <div className="flex flex-col justify-center items-start gap-2">
+  <div className="flex flex-col justify-center  items-center md:items-start gap-2">
 <Image src="/logo.png" alt="Afrovivo Logo" width={100 } height={200}/>
 <h3 className="text-2xl font-semibold clash">Let’s Power the Future, Together
 </h3>
