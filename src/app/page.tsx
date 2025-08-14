@@ -34,7 +34,7 @@ We believe Africa’s energy future must be clean, accessible, and inclusive. Th
 </p>
 </div>
 <div className="flex flex-col justify-center items-center w-full  md:w-1/2">
-  <Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} />
+  <Image src="/img2.jpg" alt="Afrovivo Logo" width={400} height={100}  className="rounded-lg"/>
 </div>
         </div>
 <div className="flex justify-center items-center w-full gap-10 md:gap-20">
@@ -57,19 +57,27 @@ We believe Africa’s energy future must be clean, accessible, and inclusive. Th
 <h2 className="clash text-4xl font-semibold">What We Do</h2>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full mt-10">
 <ServicesCard title="Oil & Gas Solutions" subtext=" We keep Africa moving with efficient, high-quality fuel distribution—from on-demand delivery to bulk industrial supply. Our network ensures businesses and individuals have the fuel they need, when they need it.
-"/>
+"
+image="/img-4.jpg"
+/>
 <ServicesCard title="Renewable Energy Development
 " subtext=" We design and deliver solar plants, hybrid systems, and other green infrastructure that help our clients cut costs, reduce emissions, and secure a cleaner future.
-"/>
+"
+image="/img-5.jpg"
+/>
 <ServicesCard title="
 
 Energy Consulting & Project Development
 " subtext="
  Governments, investors, and businesses turn to us for market insights, project planning, and strategies to adopt sustainable energy successfully.
-"/>
+"
+image="img-6.jpg"
+/>
 <ServicesCard title="Strategic Partnerships
 " subtext=" By collaborating with trusted partners locally and abroad, we open new markets, attract investment, and accelerate Africa’s energy transformation.
-"/>
+"
+image="img-7.jpg"
+/>
 </div>
 
       </section>
@@ -114,8 +122,8 @@ Energy Consulting & Project Development
 </div>
 </div>
 <div className="flex justify-center items-center">
-<Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} className="rounded-2xl" />
-<Image src="/bg-img.jpg" alt="Afrovivo Logo" width={400} height={100} className="rounded-2xl"/>
+<Image src="/img-1.jpg" alt="Afrovivo Logo" width={400} height={100} className="rounded-2xl" />
+<Image src="/img-3.jpg" alt="Afrovivo Logo" width={400} height={100} className="rounded-2xl"/>
 </div>
 
 </div>

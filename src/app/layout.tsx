@@ -14,6 +14,11 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "Afrovivo Energy",
   description: "Powering Africa's future through innovative energy solutions.",
+  icons: {
+  icon: [{ url: "/logo.png", type: "image/png" }],
+  shortcut: ["/logo.png"],
+  apple: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({
@@ -46,13 +51,13 @@ export default function RootLayout({
 </div>
 <div className="flex justify-center items-start gap-2">
 <span className="text-gray-800 font-medium text-sm clash">
-  <Link href="">
+  <Link href="https://www.instagram.com/afrovivo_energy?igsh=cHFyNHNocHpzOTM3">
   Instagram
   </Link>
 
 </span>
 <span className="text-gray-800 font-medium text-sm clash">
-  <Link href="">
+  <Link href="https://www.linkedin.com/company/afrovivo-energy/">
     Linkedin
   </Link>
 

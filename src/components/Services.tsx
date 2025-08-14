@@ -2,13 +2,16 @@ import React from 'react'
 
 
 interface CardProps{
- 
-  title:string,
-  subtext:string
+  title: string,
+  subtext: string,
+  image?: string,
 }
-const ServicesCard = ({ title, subtext }: CardProps) => {
+const ServicesCard = ({ title, subtext, image = "/bg-img.jpg" }: CardProps) => {
   return (
-    <div className="flex flex-col justify-end items-start h-[50vh] bg-[url('/bg-img.jpg')] bg-cover bg-center p-5 rounded-lg gap-4 relative">
+    <div
+      className="flex flex-col justify-end items-start h-[50vh] bg-cover bg-center p-5 rounded-lg gap-4 relative"
+      style={{ backgroundImage: `url(${image})` }}
+    >
        <div
           className="absolute inset-0 pointer-events-none"
           style={{
