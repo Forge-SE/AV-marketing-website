@@ -4,10 +4,10 @@ import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
-});
+// const manrope = Manrope({
+//   variable: "--font-manrope",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Afrovivo Energy",
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} antialiased`}>
+      <body className={`aeonik-regular antialiased`}>
         {children}
        </body>
     </html>

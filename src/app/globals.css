@@ -1,11 +1,18 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: ClashDisplay;
-  src: url('/fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-family: Aeonik;
+  src: url('/fonts/_AeonikTRIAL-Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: Aeonik;
+  src: url('/fonts/_AeonikTRIAL-Regular.otf') format('opentype');
 }
 
 
 .clash{
-  font-family: ClashDisplay;
+  font-family: Aeonik;
+}
+.aeonik-regular{
+  font-family: Aeonik;
 }
