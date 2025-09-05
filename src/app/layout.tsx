@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
+import Navbar from "@/components/layout/Navbar";
 
 // const manrope = Manrope({
 //   variable: "--font-manrope",
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`aeonik-regular antialiased`}>
+        <Navbar/>
         {children}
        </body>
     </html>
