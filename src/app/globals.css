@@ -1,11 +1,30 @@
+@import url(https://db.onlinewebfonts.com/c/f56809563b15c7c76669dac9ca9d38ac?family=Matter+Regular);
 @import "tailwindcss";
 
+/* @font-face {
+  font-family: Aeonik;
+  src: url('/fonts/_AeonikTRIAL-Bold.otf') format('opentype');
+}
 @font-face {
-  font-family: ClashDisplay;
-  src: url('/fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-family: Aeonik;
+  src: url('/fonts/_AeonikTRIAL-Regular.otf') format('opentype');
+} */
+@font-face {
+  font-family: Gambariano;
+  src: url('/fonts/_Gambarino-Regular.otf') format('opentype');
 }
 
 
-.clash{
-  font-family: ClashDisplay;
+/* .clash{
+  font-family: Aeonik;
+}
+.aeonik-regular{
+  font-family: Aeonik;
+} */
+
+body{
+  font-family: "Matter Regular", sans-serif;
+}
+.gambariano{
+  font-family: Gambariano;
 }
