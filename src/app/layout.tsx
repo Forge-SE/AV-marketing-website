@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 // import { Manrope } from "next/font/google";
 // import Image from "next/image";
 import "./globals.css";
+import {Footer} from "@/components/layout/Footer";
 // import Link from "next/link";
 
 // const manrope = Manrope({
@@ -26,7 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>{children}</body>
+      <body className={` antialiased`}>
+        {children}
+         <Footer/>
+      </body>
+      
+       
     </html>
   );
 }
