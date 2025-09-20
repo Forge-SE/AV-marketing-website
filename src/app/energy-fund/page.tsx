@@ -14,7 +14,7 @@ export default function EnergyFundPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+  <section id="overview" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 scroll-mt-28">
         <div className="max-w-5xl mx-auto">
           <h2 className="clash text-2xl sm:text-3xl font-semibold">Overview</h2>
           <p className="mt-3 text-slate-700 text-sm sm:text-base leading-relaxed">
@@ -23,7 +23,7 @@ export default function EnergyFundPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-slate-50">
+  <section id="strategy" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-slate-50 scroll-mt-28">
         <div className="max-w-5xl mx-auto">
           <h2 className="clash text-2xl sm:text-3xl font-semibold">Investment Strategy</h2>
           <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-700 text-sm sm:text-base">
@@ -35,7 +35,7 @@ export default function EnergyFundPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+  <section id="why-invest" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 scroll-mt-28">
         <div className="max-w-5xl mx-auto">
           <h2 className="clash text-2xl sm:text-3xl font-semibold">Why Invest with Afrovivo?</h2>
           <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-700 text-sm sm:text-base">
@@ -48,7 +48,7 @@ export default function EnergyFundPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-slate-50">
+  <section id="fund-structure" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-slate-50 scroll-mt-28">
         <div className="max-w-5xl mx-auto">
           <h2 className="clash text-2xl sm:text-3xl font-semibold">Fund Structure</h2>
           <dl className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-700 text-sm sm:text-base">
@@ -60,7 +60,7 @@ export default function EnergyFundPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+  <section id="investor-benefits" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 scroll-mt-28">
         <div className="max-w-5xl mx-auto">
           <h2 className="clash text-2xl sm:text-3xl font-semibold">Investor Benefits</h2>
           <ul className="mt-4 space-y-3 text-slate-700 text-sm sm:text-base">
@@ -72,7 +72,7 @@ export default function EnergyFundPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-slate-50">
+  <section id="partnerships" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 bg-slate-50 scroll-mt-28">
         <div className="max-w-5xl mx-auto">
           <h2 className="clash text-2xl sm:text-3xl font-semibold">Partnership Opportunities</h2>
           <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-slate-700 text-sm sm:text-base">
@@ -85,7 +85,7 @@ export default function EnergyFundPage() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 lg:px-8 py-16">
+  <section id="cta" className="px-4 sm:px-6 lg:px-8 py-16 scroll-mt-28">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="clash text-2xl sm:text-3xl font-semibold">Join us in building Africa’s energy legacy.</h2>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
