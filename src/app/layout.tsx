@@ -4,6 +4,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import {Footer} from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
+
+import { Analytics } from "@vercel/analytics/next"
+
 // import Link from "next/link";
 
 // const manrope = Manrope({
@@ -28,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+      <Analytics />
+
       <body className={` antialiased `} >
         <Navbar/>
         {children}
