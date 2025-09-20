@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { siteContent } from '@/content/siteContent'
 const Navbar = () => {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
@@ -43,20 +44,13 @@ const Navbar = () => {
     { name: 'Get in Touch', link: '#cta' },
   ]
 
-  const aboutSections = [
-    { name: 'Who We Are', link: '#who-we-are' },
-    { name: 'Mission & Vision', link: '#mission-and-vision' },
-    { name: 'Why Afrovivo', link: '#why-afrovivo' },
-    { name: 'Our Leadership', link: '#our-leadership' },
-  ]
+  const aboutSections = siteContent.nav.items.find(i => i.name === 'About')?.children || []
 
-  const navItems= [
-    {name: "Home", link: "/"},
-    {name: "About", link: "/#about", children: aboutSections},
-    {name: "Our Focus", link: "#our-focus"},
-    {name: "Investors & Partners", link: "#investors-and-partners"},
-    {name: "The Energy Fund", link: "/energy-fund", children: showFundChildren ? energyFundSections : undefined},
-  ]
+  const navItems = siteContent.nav.items.map(i => (
+    i.name === 'The Energy Fund'
+      ? { ...i, children: showFundChildren ? energyFundSections : undefined }
+      : i
+  ))
 
   const isActive = (link: string) => {
     if (link.startsWith('#')) {
@@ -174,7 +168,7 @@ const Navbar = () => {
               </Link>
             )
           })}
-          <button className='mt-2 bg-orange-900 text-white px-4 py-2 rounded-sm text-sm hover:bg-orange-600 w-full'>Get Started</button>
+          <button className='mt-2 bg-orange-900 text-white px-4 py-2 rounded-sm text-sm hover:bg-orange-600 w-full'>{siteContent.nav.cta}</button>
         </div>
       )}
     </nav>

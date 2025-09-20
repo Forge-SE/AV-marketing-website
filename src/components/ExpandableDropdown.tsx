@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import { siteContent } from "@/content/siteContent";
 
 interface ServiceItem {
   id: string;
@@ -14,68 +15,7 @@ interface ServiceItem {
 }
 
 const ExpandableDropdown: React.FC = () => {
-  const services: ServiceItem[] = [
-    {
-      id: "infrastructure",
-      title: "Energy Infrastructure & Investments",
-      description: "Large-scale oil and gas infrastructure development",
-      details:
-        "We invest in and develop comprehensive energy infrastructure including storage facilities, pipelines, and distribution networks. Our approach focuses on creating sustainable, scalable solutions that serve Africa's growing energy needs while generating strong returns for investors.",
-      image: "/infra.png",
-      features: [
-        "Storage facility development",
-        "Pipeline infrastructure",
-        "Distribution networks",
-        "Facility management",
-        "Strategic partnerships",
-      ],
-    },
-    {
-      id: "acquisitions",
-      title: "Strategic Acquisitions & Joint Ventures",
-      description: "Partnering for high-value energy assets",
-      details:
-        "Afrovivo partners with operators, governments, and institutional investors to acquire and grow high-value energy assets. We leverage our deep market knowledge and strategic relationships to identify and execute transformative deals across the African energy sector.",
-      image: "/team.jpg",
-      features: [
-        "Asset acquisition strategies",
-        "Government partnerships",
-        "Institutional investor relations",
-        "Due diligence processes",
-        "Value creation programs",
-      ],
-    },
-    {
-      id: "capital",
-      title: "Capital Solutions",
-      description: "Tailored financing for energy projects",
-      details:
-        "Through our Energy Fund, we provide comprehensive financing solutions for energy projects across Africa. Our flexible approach combines equity, debt, and joint financing structures to meet the unique needs of each project and maximize value for all stakeholders.",
-      image: "/hero-section-c.jpg",
-      features: [
-        "Equity financing",
-        "Debt structuring",
-        "Joint financing models",
-        "Risk management",
-        "Portfolio optimization",
-      ],
-    },
-    {
-      id: "renewables",
-      title: "Transition & Renewables",
-      description: "Exploring sustainable energy opportunities",
-      details:
-        "While oil and gas remain our anchor, we actively explore renewable opportunities that align with Africa's long-term energy transition. We focus on projects that complement our existing portfolio while building capabilities for the energy future.",
-      image: "/hero-section-b.jpg",
-      features: [
-        "Renewable project assessment",
-        "Transition planning",
-        "Hybrid energy solutions",
-        "Technology partnerships",
-        "Sustainable development",
-      ],
-    },
-  ];
+  const services: ServiceItem[] = siteContent.services.items as unknown as ServiceItem[];
 
   // Set the first item as default active
   const [activeItem, setActiveItem] = useState<string>(services[0].id);
