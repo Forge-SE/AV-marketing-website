@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, {  useState } from "react";
 import Image from "next/image";
 import { ArrowRightIcon, BanknotesIcon, BriefcaseIcon, BuildingLibraryIcon, ChartBarIcon, ClockIcon, GlobeAltIcon, LinkIcon, UsersIcon } from "@heroicons/react/24/outline";
 import { TeamCard } from "@/components/TeamCard";
