@@ -5,7 +5,7 @@ import { EnvelopeIcon, MapIcon, PhoneIcon } from '@heroicons/react/24/outline'
 export const Footer = () => {
   return (
     <div className='bg-white/90 h-auto p-10 flex flex-col justify-center items-center gap-10 border-t border-t-gray-100 w-full'>
-      <div className='flex justify-between items-center gap-6 mb-4 w-full'>
+      <div className='flex md:flex-row flex-col justify-between  items-start md:items-center gap-10 md:gap-6 mb-4 w-full'>
         <div className='flex flex-col justify-center items-start gap-2'>
  <Image src="/logo.png" alt="Afrovivo Logo"  width={100} height={100}/>
  <p className='text-base font-normal uppercase text-orange-800'>Let&apos;s power Africa&apos;s energy future together</p>

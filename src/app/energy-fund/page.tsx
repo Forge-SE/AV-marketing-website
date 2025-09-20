@@ -11,7 +11,7 @@ export default function EnergyFundPage() {
         <div className="bg-black/60">
  <div className="relative z-10 max-w-5xl mx-auto">
           <h1 className="clash text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Afrovivo Energy Fund</h1>
-          <p className="mt-4 text-white/90 text-base sm:text-lg">Connecting global capital to Africa’s high-potential energy assets.</p>
+          <p className="mt-4 text-white/90 text-base sm:text-lg">Connecting global capital to Africa&apos;s high-potential energy assets.</p>
         </div>
         </div>
        
@@ -21,7 +21,7 @@ export default function EnergyFundPage() {
         <div className="max-w-5xl mx-auto">
           <h2 className="clash text-2xl sm:text-3xl font-semibold">Overview</h2>
           <p className="mt-3 text-slate-700 text-sm sm:text-base leading-relaxed">
-            The Afrovivo Energy Fund is our flagship investment vehicle focused on Africa’s oil, gas, and energy infrastructure. The Fund connects global investors with high-potential energy assets across West Africa and beyond, creating a platform for sustainable growth, energy security, and attractive returns.
+            The Afrovivo Energy Fund is our flagship investment vehicle focused on Africa&apos;s oil, gas, and energy infrastructure. The Fund connects global investors with high-potential energy assets across West Africa and beyond, creating a platform for sustainable growth, energy security, and attractive returns.
           </p>
         </div>
       </section>
@@ -92,8 +92,8 @@ export default function EnergyFundPage() {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="clash text-2xl sm:text-3xl font-semibold">Join us in building Africa’s energy legacy.</h2>
           <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <a href="mailto:partnerships@afrovivo.com?subject=Partner%20With%20the%20Fund" className="inline-flex items-center justify-center px-5 py-3 rounded-sm bg-orange-600 text-white hover:bg-orange-500 transition-colors">📩 Partner With the Fund</a>
-            <a href="mailto:investors@afrovivo.com?subject=Request%20Investor%20Deck" className="inline-flex items-center justify-center px-5 py-3 rounded-sm border border-slate-300 hover:bg-slate-100 transition-colors">📑 Request Investor Deck</a>
+            <a href="mailto:info@afrovivointernational.com?subject=Partner%20With%20the%20Fund" className="inline-flex items-center justify-center px-5 py-3 rounded-sm bg-orange-600 text-white hover:bg-orange-500 transition-colors">📩 Partner With the Fund</a>
+            <a href="mailto:info@afrovivointernational.com?subject=Request%20Investor%20Deck" className="inline-flex items-center justify-center px-5 py-3 rounded-sm border border-slate-300 hover:bg-slate-100 transition-colors">📑 Request Investor Deck</a>
           </div>
         </div>
       </section>
