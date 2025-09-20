@@ -9,6 +9,7 @@ const Navbar = () => {
   const [hash, setHash] = useState<string>("")
   const [scrolled, setScrolled] = useState(false)
   const [subOpen, setSubOpen] = useState(false)
+  const [aboutSubOpen, setAboutSubOpen] = useState(false)
 
   // Track URL hash for in-page navigation highlighting (e.g., #about)
   useEffect(() => {
@@ -42,11 +43,17 @@ const Navbar = () => {
     { name: 'Get in Touch', link: '#cta' },
   ]
 
+  const aboutSections = [
+    { name: 'Who We Are', link: '#who-we-are' },
+    { name: 'Mission & Vision', link: '#mission-and-vision' },
+    { name: 'Why Afrovivo', link: '#why-afrovivo' },
+    { name: 'Our Leadership', link: '#our-leadership' },
+  ]
+
   const navItems= [
     {name: "Home", link: "/"},
-    {name: "About", link: "#about"},
+    {name: "About", link: "/#about", children: aboutSections},
     {name: "Our Focus", link: "#our-focus"},
-    {name: "Our Leadership", link: "/#our-leadership"},
     {name: "Investors & Partners", link: "#investors-and-partners"},
     {name: "The Energy Fund", link: "/energy-fund", children: showFundChildren ? energyFundSections : undefined},
   ]
@@ -78,7 +85,7 @@ const Navbar = () => {
         </button>
         <div className='hidden sm:flex items-center gap-4'>
           {navItems.map((item, index)=>{
-            if (item.children && showFundChildren) {
+            if (item.children) {
               return (
                 <div key={index} className='relative group'>
                   <Link
@@ -88,15 +95,20 @@ const Navbar = () => {
                     {item.name} <span className='ml-1'>▾</span>
                   </Link>
                   <div className='invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-150 absolute right-0 mt-2 w-56 bg-white/95 supports-[backdrop-filter]:bg-white/80 backdrop-blur-md border border-slate-200 rounded-md shadow-lg p-2'>
-                    {item.children.map((child, ci) => (
-                      <Link
-                        key={ci}
-                        href={`/energy-fund${child.link}`}
-                        className={`block px-3 py-2 rounded hover:bg-slate-100 ${pathname === '/energy-fund' && hash === child.link ? 'text-orange-900 font-medium' : ''}`}
-                      >
-                        {child.name}
-                      </Link>
-                    ))}
+                    {item.children.map((child, ci) => {
+                      const base = item.name === 'The Energy Fund' ? '/energy-fund' : '/'
+                      const active = (base === '/energy-fund' && pathname === '/energy-fund' && hash === child.link) ||
+                                     (base === '/' && pathname === '/' && hash === child.link)
+                      return (
+                        <Link
+                          key={ci}
+                          href={`${base}${child.link}`}
+                          className={`block px-3 py-2 rounded hover:bg-slate-100 ${active ? 'text-orange-900 font-medium' : ''}`}
+                        >
+                          {child.name}
+                        </Link>
+                      )
+                    })}
                   </div>
                 </div>
               )
@@ -118,28 +130,35 @@ const Navbar = () => {
       {open && (
         <div className='sm:hidden mt-3 flex flex-col gap-3 px-2 py-3 bg-white/95 supports-[backdrop-filter]:bg-white/80 backdrop-blur-md border border-slate-200 rounded-md shadow-sm'>
           {navItems.map((item, index)=>{
-            if (item.children && showFundChildren) {
+            if (item.children) {
+              const isFund = item.name === 'The Energy Fund'
+              const expanded = isFund ? subOpen : aboutSubOpen
               return (
                 <div key={index} className='border-b border-slate-200'>
                   <button
-                    onClick={() => setSubOpen((v) => !v)}
+                    onClick={() => (isFund ? setSubOpen(v => !v) : setAboutSubOpen(v => !v))}
                     className={`w-full text-left py-2 flex items-center justify-between ${isActive(item.link) ? 'text-orange-900 font-medium' : ''}`}
                   >
                     <span>{item.name}</span>
-                    <span className={`transition-transform ${subOpen ? 'rotate-180' : ''}`}>▾</span>
+                    <span className={`transition-transform ${expanded ? 'rotate-180' : ''}`}>▾</span>
                   </button>
-                  {subOpen && (
+                  {expanded && (
                     <div className='pl-3 pb-2 flex flex-col gap-1'>
-                      {item.children.map((child, ci) => (
-                        <Link
-                          key={ci}
-                          href={`/energy-fund${child.link}`}
-                          onClick={() => setOpen(false)}
-                          className={`py-2 ${pathname === '/energy-fund' && hash === child.link ? 'text-orange-900 font-medium' : ''}`}
-                        >
-                          {child.name}
-                        </Link>
-                      ))}
+                      {item.children.map((child, ci) => {
+                        const base = isFund ? '/energy-fund' : '/'
+                        const active = (base === '/energy-fund' && pathname === '/energy-fund' && hash === child.link) ||
+                                       (base === '/' && pathname === '/' && hash === child.link)
+                        return (
+                          <Link
+                            key={ci}
+                            href={`${base}${child.link}`}
+                            onClick={() => setOpen(false)}
+                            className={`py-2 ${active ? 'text-orange-900 font-medium' : ''}`}
+                          >
+                            {child.name}
+                          </Link>
+                        )
+                      })}
                     </div>
                   )}
                 </div>

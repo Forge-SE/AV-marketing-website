@@ -51,3 +51,26 @@ img, svg, video, canvas {
 @media (min-width: 1280px) { /* xl */
   .container { max-width: 1280px; }
 }
+
+/* Smooth scrolling for hash navigation */
+html { scroll-behavior: smooth; }
+
+/* Reveal on scroll animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal.reveal-in {
+  animation: fadeUp 600ms ease-out both;
+}
+
+/* Highlight target section briefly */
+:target {
+  scroll-margin-top: 7rem; /* accommodate sticky navbar */
+  animation: targetFlash 1200ms ease-out 1;
+}
+@keyframes targetFlash {
+  0% { box-shadow: 0 0 0 0 rgba(255,115,0,0.0); }
+  20% { box-shadow: 0 0 0 6px rgba(255,115,0,0.15); }
+  100% { box-shadow: 0 0 0 0 rgba(255,115,0,0.0); }
+}

@@ -7,11 +7,14 @@ export default function EnergyFundPage() {
   return (
     <main className="min-h-screen w-full">
       <section className="relative flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-20 sm:py-24 bg-[url('/bg-img.jpg')] bg-cover bg-center">
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30" />
-        <div className="relative z-10 max-w-5xl mx-auto">
+        <div className="absolute inset-0 bg-[url('/hero-section-bg.jpg')] bg-cover bg-center" />
+        <div className="bg-black/60">
+ <div className="relative z-10 max-w-5xl mx-auto">
           <h1 className="clash text-3xl sm:text-4xl lg:text-5xl font-bold text-white">Afrovivo Energy Fund</h1>
           <p className="mt-4 text-white/90 text-base sm:text-lg">Connecting global capital to Africa’s high-potential energy assets.</p>
         </div>
+        </div>
+       
       </section>
 
   <section id="overview" className="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 scroll-mt-28">
