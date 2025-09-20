@@ -47,7 +47,7 @@ export default function Home() {
               </div>
             </section>
 
-            <section className="flex flex-col justify-center items-center gap-3 p-10 h-auto ">
+            <section className="flex flex-col justify-center items-center gap-3 p-10 h-auto " id="about">
               <span className=" clash font-normal text-4xl w-1/2 text-center">
                 Creating{" "}
                 <span className="text-orange-950 italic gambariano  font-semibold">
@@ -96,7 +96,7 @@ and long-term prosperity in Africa</p>
               </div>
             </section>
 
-            <section className="h-auto p-10 flex flex-col justify-center items-start w-full">
+            <section className="h-auto p-10 flex flex-col justify-center items-start w-full" id="our-focus">
               <h1 className="text-black text-4xl font-semibold mb-10">
                 Our Focus
               </h1>
@@ -107,7 +107,7 @@ and long-term prosperity in Africa</p>
               </div>
             </section>
 
-            <section className="flex flex-col justify-center items-center gap-3 p-10 h-auto bg-white">
+            <section className="flex flex-col justify-center items-center gap-3 p-10 h-auto bg-white" id="why-afrovivo">
         <div className="flex flex-col justify-center items-center w-full mt-10">
 <h1 className="text-black text-4xl font-semibold">Why Afrovivo ?</h1>
         </div>
@@ -119,7 +119,7 @@ and long-term prosperity in Africa</p>
 
         </div>
             </section>
-            <section className="flex  flex-col justify-start items-start  bg-orange-800 text-white h-auto p-10 min-h-[50vh] gap-10">
+            <section className="flex  flex-col justify-start items-start  bg-orange-800 text-white h-auto p-10 min-h-[50vh] gap-10" id="our-leadership">
               <div className="flex justify-center items-start ">
                 <div className="flex flex-col justify-center gap-4 items-start w-1/2">
                   <h1 className="text-4xl font-semibold"> Our Leadership </h1>
@@ -163,7 +163,7 @@ and long-term prosperity in Africa</p>
                 </div>
               )}
             </section>
-                <section className="flex flex-col justify-center items-center gap-3 p-10 h-auto bg-white">
+                <section className="flex flex-col justify-center items-center gap-3 p-10 h-auto bg-white" id="investors-and-partners">
         <div className="flex flex-col justify-center items-center gap-2 w-full mt-10">
 <h1 className="text-black text-4xl font-semibold">Investors & Partners</h1>
 <p className="text-base text-gray-700">We work with</p>

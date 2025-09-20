@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 // import Image from "next/image";
 import "./globals.css";
 import {Footer} from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 // import Link from "next/link";
 
 // const manrope = Manrope({
@@ -27,7 +28,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>
+      <body className={` antialiased `} >
+        <Navbar/>
         {children}
          <Footer/>
       </body>
