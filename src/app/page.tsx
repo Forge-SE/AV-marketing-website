@@ -9,7 +9,7 @@ import Reveal from "@/components/Reveal";
 export default function Home() {
   const [showTeam, setShowTeam] = useState(false);
 
-  const [siteIsComplete, setSiteIsComplete] = useState(false);
+  const [siteIsComplete, setSiteIsComplete] = useState(true);
 
   return (
     <>
