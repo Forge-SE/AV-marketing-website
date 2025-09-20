@@ -28,3 +28,49 @@ body{
 .gambariano{
   font-family: Gambariano;
 }
+
+/* Global responsive helpers */
+img, svg, video, canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem; /* 16px */
+  padding-right: 1rem;
+}
+@media (min-width: 640px) { /* sm */
+  .container { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+@media (min-width: 1024px) { /* lg */
+  .container { max-width: 1024px; }
+}
+@media (min-width: 1280px) { /* xl */
+  .container { max-width: 1280px; }
+}
+
+/* Smooth scrolling for hash navigation */
+html { scroll-behavior: smooth; }
+
+/* Reveal on scroll animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(1rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.reveal.reveal-in {
+  animation: fadeUp 600ms ease-out both;
+}
+
+/* Highlight target section briefly */
+:target {
+  scroll-margin-top: 7rem; /* accommodate sticky navbar */
+  animation: targetFlash 1200ms ease-out 1;
+}
+@keyframes targetFlash {
+  0% { box-shadow: 0 0 0 0 rgba(255,115,0,0.0); }
+  20% { box-shadow: 0 0 0 6px rgba(255,115,0,0.15); }
+  100% { box-shadow: 0 0 0 0 rgba(255,115,0,0.0); }
+}
