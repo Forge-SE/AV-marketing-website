@@ -132,20 +132,20 @@ export const siteContent = {
       strategy: {
         title: "Investment Strategy",
         bullets: [
-          "Upstream – Strategic stakes in exploration and production projects with proven reserves.",
-          "Midstream – Investments in storage, distribution, and transportation infrastructure (depots, pipelines, terminals).",
-          "Downstream – Retail distribution, mobile fuel delivery, and regional supply chain networks.",
-          "Energy Transition – Selective investments in renewables and clean energy initiatives aligned with Africa’s long-term transition goals.",
+          "Upstream : Strategic stakes in exploration and production projects with proven reserves.",
+          "Midstream : Investments in storage, distribution, and transportation infrastructure (depots, pipelines, terminals).",
+          "Downstream : Retail distribution, mobile fuel delivery, and regional supply chain networks.",
+          "Energy Transition:  Selective investments in renewables and clean energy initiatives aligned with Africa’s long-term transition goals.",
         ],
       },
       whyInvest: {
         title: "Why Invest with Afrovivo?",
         bullets: [
-          "High-Growth Market – Africa is one of the fastest-growing energy markets in the world.",
-          "Institutional-Grade Governance – International compliance, due diligence, and reporting standards.",
-          "Experienced Leadership – Expertise in energy, finance, and investment banking.",
-          "Diversification – Exposure across oil, gas, and renewables within a single African-focused platform.",
-          "Impact-Driven – We invest in energy access, infrastructure development, and sustainable communities.",
+          "High-Growth Market: Africa is one of the fastest-growing energy markets in the world.",
+          "Institutional-Grade Governance:  International compliance, due diligence, and reporting standards.",
+          "Experienced Leadership:  Expertise in energy, finance, and investment banking.",
+          "Diversification:  Exposure across oil, gas, and renewables within a single African-focused platform.",
+          "Impact-Driven:  We invest in energy access, infrastructure development, and sustainable communities.",
         ],
       },
       fundStructure: {
@@ -182,8 +182,8 @@ export const siteContent = {
       },
       cta: {
         title: "Join us in building Africa’s energy legacy.",
-        partner: "📩 Partner With the Fund",
-        deck: "📑 Request Investor Deck",
+        partner: " Partner With the Fund",
+        deck: " Request Investor Deck",
       },
     },
   },
