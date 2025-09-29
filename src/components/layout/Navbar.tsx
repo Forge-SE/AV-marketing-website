@@ -3,7 +3,9 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+
 import { siteContent } from '@/content/siteContent'
+
 const Navbar = () => {
   const [open, setOpen] = useState(false)
   const pathname = usePathname()
@@ -51,6 +53,7 @@ const Navbar = () => {
       ? { ...i, children: showFundChildren ? energyFundSections : undefined }
       : i
   ))
+
 
   const isActive = (link: string) => {
     if (link.startsWith('#')) {
@@ -168,7 +171,9 @@ const Navbar = () => {
               </Link>
             )
           })}
+
           <button className='mt-2 bg-orange-900 text-white px-4 py-2 rounded-sm text-sm hover:bg-orange-600 w-full'>{siteContent.nav.cta}</button>
+
         </div>
       )}
     </nav>
