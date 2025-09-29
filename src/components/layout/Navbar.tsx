@@ -4,7 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
+
 import { siteContent } from '@/content/siteContent'
+
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -34,6 +36,7 @@ const Navbar = () => {
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
+
 
   const showFundChildren = pathname === '/energy-fund'
   const energyFundSections = [
@@ -173,6 +176,7 @@ const Navbar = () => {
           })}
 
           <button className='mt-2 bg-orange-900 text-white px-4 py-2 rounded-sm text-sm hover:bg-orange-600 w-full'>{siteContent.nav.cta}</button>
+
 
         </div>
       )}

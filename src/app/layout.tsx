@@ -33,6 +33,7 @@ export default function RootLayout({
     <html lang="en">
 
       <Analytics />
+
       <body className={` antialiased `} >
         <Navbar/>
         {children}
